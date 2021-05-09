@@ -12,9 +12,10 @@ new20<- new19
 #resolución con tabla de frecuncias
 #HomeTeam
 dfht<- as.data.frame(table(new20$FTHG))
-dfht2<- prop.table(table(new20$FTHG, exclude=c(3:6)))#con esta tabla me sale otro número
+dfht3<- prop.table(table(new20$FTHG, exclude=c(3:6)))#con esta tabla me sale otro número
 dfht2<- prop.table(table(new20$FTHG))#con esta tabla me sale otro número
 View(dfht2)
+View(dfht3)
 #AwayTeam
 dfat<- as.data.frame(table(new20$FTAG))
 dfat2<- prop.table(table(new20$FTAG, exclude=c(3:6)))#con esta tabla me sale otro número
