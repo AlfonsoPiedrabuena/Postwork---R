@@ -15,6 +15,7 @@ new18<- mutate(new18, Date = as.Date(Date, "%d/%m/%Y"), FTHG = as.numeric(FTHG),
 new19<- mutate(new19, Date = as.Date(Date, "%d/%m/%Y"), FTHG = as.numeric(FTHG), FTAG = as.numeric(FTAG))
 
 x<- rbind(new17,new18,new19)
+View(x)
 prueba<-x
 
 #Home Team
