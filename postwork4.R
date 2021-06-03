@@ -11,3 +11,7 @@ View(liga19)
 new17<- select(liga17,Date,HomeTeam,HS,AwayTeam,AS)
 new18<- select(liga18,Date,HomeTeam,HS,AwayTeam,AS)
 new19<- select(liga19,Date,HomeTeam,HS,AwayTeam,AS)
+
+SmallData<- as.data.frame(rbind(new17,new18,new19))
+
+write.csv(SmallData, file='soccer.csv', row.names = FALSE)
