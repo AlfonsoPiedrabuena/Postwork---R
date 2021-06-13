@@ -1,7 +1,7 @@
 install.packages("mongolite")
 library(mongolite)
 
-mongo_url<- 'mongodb+srv://root:root@cluster0.gm2op.mongodb.net/test?authSource=admin&replicaSet=atlas-5fp2uk-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true'
+mongo_url<- 'liga a mongo compass'
 x<- mongo(
   collection = "match",
   db = "match_games",
